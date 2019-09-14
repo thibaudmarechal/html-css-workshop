@@ -2,6 +2,36 @@
 <html>
   <body>
     <h1>Registration form</h1>
-    <!-- Add form here -->
+    <form>
+      <span>Username</span>
+      <input type="text" required/>
+      <span>password</span>
+      <input type="password" required/>
+      <div>
+        <span>Email</span>
+        <input type="text" required/>
+      </div>
+      <div>Which taxi do you require?</div>
+      <input type="radio" id='r1' name="taxi_type" value="car"><label for="r1"> Car</label><br>
+      <input type="radio" id='r2' name="taxi_type" value="van"><label for="r2"> Van</label><br>
+      <input type="radio" id='r3' name="taxi_type" value="tuk_tuk"><label for="r3"> Tuk Tuk</label>
+      <div>Extras</div>
+      <input type="checkbox" id='c1' name="extras" value="baby_seat"/><label for="c1">Seat</label>
+      <div><input type="checkbox" id='c2' name="extras" value="wheelchair_access"/><label for="c2">Wheelchair Access</label></div>
+      <div><input type="checkbox" id='c3' name="extras" value="stock_tip"/><label for="c3">Stock Tip</label></div>
+      <div>
+        <span>Pickup</span>
+        <select>
+          <option value="taxi_office">Taxi Office</option>
+          <option value="townhall">Town Hall</option>
+          <option value="guess">We'll guess!</option>
+        </select>
+    </div>
+    <div>
+      <span>Special</span>
+      <textarea rows="3" cols="20"></textarea>
+    </div>
+    <button>Submit</button>
+  </form>
   </body>
 </html>
